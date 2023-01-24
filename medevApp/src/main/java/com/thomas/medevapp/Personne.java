@@ -12,6 +12,7 @@ public class Personne {
     private String firstname;
     private String lastname;
     private String email;
+    private Adresse adresse;
 
     /**
      *
@@ -25,6 +26,29 @@ public class Personne {
         this.email = email;
     }
 
+    /**
+     *
+     * @param firstname
+     * @param lastname
+     * @param email
+     * @param adresse
+     */
+    public Personne(String firstname, String lastname, String email, Adresse adresse) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.email = email;
+        this.adresse = adresse;
+    }
+
+    /**
+     *
+     * @return
+     */
+    @Override
+    public String toString() {
+        return "Personne{" + "firstname=" + firstname + ", lastname=" + lastname + ", email=" + email + ", adresse=" + adresse + '}';
+    }
+    
     /**
      *
      * @return
@@ -72,4 +96,22 @@ public class Personne {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    /**
+     *
+     * @return
+     */
+    public Adresse getAdresse() {
+        return adresse;
+    }
+
+    /**
+     *
+     * @param adresse
+     */
+    public void setAdresse(Adresse adresse) {
+        this.adresse = adresse;
+    }
+    
+    
 }
