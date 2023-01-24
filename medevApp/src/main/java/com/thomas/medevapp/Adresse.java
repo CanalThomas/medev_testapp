@@ -28,6 +28,13 @@ public class Adresse {
         this.country = country;
     }
 
+    @Override
+    public String toString() {
+        return "Adresse{" + "streetNumber=" + streetNumber + ", streetName=" + streetName + ", city=" + city + ", country=" + country + '}';
+    }
+
+    
+    
     /**
      *
      * @return
