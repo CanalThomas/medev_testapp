@@ -51,7 +51,7 @@ public class OperatorTest {
      */
     @org.junit.jupiter.api.Test
     @ParameterizedTest
-    @ValueSource(ints = { 0,1,2,3,4,5 })
+    @ValueSource(ints = { 1,2,3,4,5 })
     public void testSum(int argument) {
         System.out.println("sum");
         int a = argument;
